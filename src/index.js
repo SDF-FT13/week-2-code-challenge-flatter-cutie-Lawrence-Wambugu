@@ -44,6 +44,10 @@ document.addEventListener("DOMContentLoaded", () => {
         voteInput.value = "";
     });
 
+    resetButton.addEventListener("click", () => {
+        voteCount.textContent = "0";
+    });
+
     characterForm.addEventListener("submit", event => {
         event.preventDefault();
         const newCharacter = {
